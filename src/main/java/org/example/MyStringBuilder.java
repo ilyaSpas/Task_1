@@ -31,17 +31,10 @@ public class MyStringBuilder {
     }
 
     private void createSnapshot() {
-        history.setSnapshot(new Snapshot(value));
+        history.addSnapshot(new Snapshot(value));
     }
 
     public void undo() {
         this.value = history.getSnapshot().getValue();
-    }
-
-    @Override
-    public String toString() {
-        return "MyStringBuilder{" +
-               "value='" + value + '\'' +
-               '}';
     }
 }

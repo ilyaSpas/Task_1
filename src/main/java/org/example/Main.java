@@ -21,5 +21,14 @@ public class Main {
 
         myStringBuilder.undo();
         System.out.println(myStringBuilder.getValue());
+
+        myStringBuilder.undo();
+        System.out.println(myStringBuilder.getValue());
+
+        myStringBuilder.undo();
+        System.out.println(myStringBuilder.getValue());
+
+        myStringBuilder.undo();
+        System.out.println(myStringBuilder.getValue());
     }
 }
